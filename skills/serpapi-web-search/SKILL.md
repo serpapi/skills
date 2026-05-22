@@ -10,7 +10,7 @@ description: >-
   Amazon, Maps, Scholar, and more.
 compatibility: >-
   Requires one of: a native serpapi_search tool; or the serpapi CLI (brew tap
-  serpapi/homebrew-tap && brew install serpapi); or an SDK; or outbound network
+  serpapi/homebrew-tap && brew install serpapi-cli); or an SDK; or outbound network
   access with curl. All paths require a SERPAPI_KEY.
 license: MIT
 ---
@@ -34,7 +34,7 @@ serpapi search --fields "organic_results[0:3]" engine=google_light q="your query
 # --jq: client-side filtering (like gh --jq)
 serpapi search --jq ".organic_results[0:3]|[.[]|{title,link}]" engine=google_light q="your query"
 ```
-Install: `brew tap serpapi/homebrew-tap && brew install serpapi`  
+Install: `brew tap serpapi/homebrew-tap && brew install serpapi-cli`  
 Auth: `SERPAPI_KEY` env var, `--api-key` flag, or `serpapi login`.  
 Exit codes: `0` success · `1` API error · `2` usage error. Errors are JSON on stderr.
 
