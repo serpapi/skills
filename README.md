@@ -130,7 +130,7 @@ curl -O https://raw.githubusercontent.com/serpapi/skills/main/skills/serpapi-web
 ### serpapi CLI
 If you prefer a CLI over raw curl, install the [serpapi CLI](https://github.com/serpapi/serpapi-cli):
 ```bash
-brew install serpapi/serpapi-cli/serpapi
+brew install serpapi/tap/serpapi-cli
 ```
 Then search directly from your shell:
 ```bash
